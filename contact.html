@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curriculum Vitae Nawal Beitia/contact</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="page">
+        <header class="header">
+            <div id="info">
+                <h1><span>Nawal Beitia</span></h1>
+                <h3><span>Formation Developpeur Web &amp; Apps</span></h3>
+                <small>
+                    <span>Tél: 06 23 47 37 69</span>,
+                </small>
+                <small><span><a href="mailto:nawalbetia@gmail.com">nawalbetia@gmail.com</a></span></small>
+            </div>
+
+            <div id="photo">
+                <img src="images/moi.jpg" alt="photo CV" />
+            </div>
+        </header>
+
+        <div class="topnav">
+            <a class="active" href="index.html">Accueil</a>
+            <a href="hobby.html">Hobbies</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <section>
+            <h2>Par mail</h2>
+            <p><small><span><a href="mailto:nawalbetia@gmail.com">nawalbetia@gmail.com</a></span></small></p>
+        </section>
+        <br>
+        <section>
+            <h2>Remplisser le formulaire</h2>
+            <p>Réponse sous 48 h</p>
+
+            <form method="post" action="https://httpbin.org/post">
+
+                <p>
+                    <label for="nom">Votre nom :</label>
+                    <input type="text" name="nom" id="nom" required />
+                </p>
+                <p>
+                    <label for="prenom">Votre prenom :</label>
+                    <input type="text" name="prenom" id="prenom" required />
+                </p>
+                <p>
+                    <label for="email">Votre email :</label>
+                    <input type="email" name="email" id="email" required />
+                </p>
+                <p>
+                    <label for="tel">Votre téléphone :</label>
+                    <input type="tel" name="tel" id="tel" required />
+                </p>
+                <p>
+                    <label for="pays">Dans quel pays habitez-vous ?</label><br />
+                    <select name="pays" id="pays">
+                        <option value="france">France</option>
+                        <option value="espagne">Espagne</option>
+                        <option value="italie">Italie</option>
+                    </select>
+                </p>
+
+                <p>
+                    Indiquer votre tranche d'âge : <br />
+                    <label for="moins-de-15">Moins de 15 ans</label>
+                    <input type="radio" name="age" value="moins de 15" id="moins-de-15"><br />
+                    <label for="medium-15-25">15-25 ans</label>
+                    <input type="radio" name="age" value="medium 15-25" id="medium-15-25"><br />
+                    <label for="medium-25-40">25-40 ans</label>
+                    <input type="radio" name="age" value="medium 25-40" id="medium-25-40"><br />
+                    <label for="plus-40">Plus de 40 ans</label>
+                    <input type="radio" name="age" value="plus 40" id="plus-40"><br />
+                </p>
+                <p>
+                    <label for="story">Commentaire</label>
+                    <textarea id="story" name="story" rows="7" cols="30" required>
+                            </textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Envoyer" />
+                    <input type="reset" value="Reset" />
+                </p>
+            </form>
+        </section>
+
+    </div>
+</body>
+
+</html>
